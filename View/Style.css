@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#555;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* LOGIN E CADASTRO */
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-login{
+    width:620px;
+    background:#000;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.titulo{
+    background:#d9d9d9;
+    text-align:center;
+    padding:15px;
+}
+
+.titulo h2{
+    font-style:italic;
+}
+
+form{
+    padding:35px;
+}
+
+input{
+    width:100%;
+    padding:18px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:40px;
+    font-size:20px;
+    font-style:italic;
+}
+
+.links{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:35px;
+}
+
+.links a{
+    color:#0066ff;
+    text-decoration:none;
+}
+
+.botoes{
+    display:flex;
+    justify-content:space-between;
+}
+
+.cancelar{
+    background:#e62b2b;
+    border:none;
+    width:160px;
+    height:60px;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.entrar{
+    background:#39c425;
+    border:none;
+    width:160px;
+    height:60px;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.cancelar:hover,
+.entrar:hover{
+    opacity:.8;
+}
+
+/* MENU PRINCIPAL */
+
+.painel{
+    width:1200px;
+    background:#000;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.topo{
+    background:#d9d9d9;
+    text-align:center;
+    padding:20px;
+}
+
+.topo h1{
+    font-style:italic;
+}
+
+.usuario{
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px;
+}
+
+.usuario h2{
+    margin-bottom:10px;
+}
+
+.btn-sair{
+    background:#e62b2b;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.btn-sair:hover{
+    opacity:.8;
+}
+
+.titulo-opcoes{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:#1a1a1a;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#242424;
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#bdbdbd;
+}
+
+.rodape{
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:25px 40px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px){
+
+    .painel{
+        width:95%;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .card-login{
+        width:95%;
+    }
+
+    .links{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .botoes{
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .usuario{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+}
